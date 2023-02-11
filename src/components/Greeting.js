@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchGreeting } from '../redux/greetings/greeting';
 
 const Greeting = () => {
-  const greeting = useSelector(state => state.greetings.greeting);
+  const greeting = useSelector((state) => state.greetings.greeting);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchGreeting());
